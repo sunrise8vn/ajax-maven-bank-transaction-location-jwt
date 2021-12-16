@@ -196,6 +196,7 @@
       <scope>compile</scope>
     </dependency>
 
+    <!-- Swagger 2 -->
     <dependency>
       <groupId>io.springfox</groupId>
       <artifactId>springfox-swagger2</artifactId>
@@ -212,17 +213,6 @@
       <version>3.3.5</version>
     </dependency>
 
-<!--    <dependency>-->
-<!--      <groupId>io.swagger.core.v3</groupId>-->
-<!--      <artifactId>swagger-annotations</artifactId>-->
-<!--      <version>2.1.2</version>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>io.swagger</groupId>-->
-<!--      <artifactId>swagger-annotations</artifactId>-->
-<!--      <version>1.5.20</version>-->
-<!--    </dependency>-->
-
   </dependencies>
 
   <build>
@@ -233,29 +223,6 @@
           <groupId>com.heroku.sdk</groupId>
           <artifactId>heroku-maven-plugin</artifactId>
           <version>3.0.3</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.0.1</version>
-          <executions>
-            <execution>
-              <phase>package</phase>
-              <goals>
-                <goal>copy</goal>
-              </goals>
-              <configuration>
-                <artifactItems>
-                  <artifactItem>
-                    <groupId>com.heroku</groupId>
-                    <artifactId>webapp-runner</artifactId>
-                    <version>9.0.41.0</version>
-                    <destFileName>webapp-runner.jar</destFileName>
-                  </artifactItem>
-                </artifactItems>
-              </configuration>
-            </execution>
-          </executions>
         </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>

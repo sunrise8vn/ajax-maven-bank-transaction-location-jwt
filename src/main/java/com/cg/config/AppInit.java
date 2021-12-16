@@ -1,6 +1,7 @@
 package com.cg.config;
 
 import com.cg.security.SecurityConfig;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -16,6 +17,7 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
     @Override
     protected Class<?>[] getServletConfigClasses() { return new Class[] {SecurityConfig.class}; }
 
+    @NotNull
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};
