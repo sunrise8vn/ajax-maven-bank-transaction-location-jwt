@@ -101,8 +101,9 @@ public class AuthAPI {
                 .secure(false)
                 .path("/")
                 .maxAge(60 * 1000)
-                .domain("localhost")
+//                .domain("localhost")
 //                .domain("spb-bank-transaction-jwt.herokuapp.com")
+                .domain("ajax-bank-location-jwt.herokuapp.com")
 //                .domain("bank-transaction.azurewebsites.net")
                 .build();
 
