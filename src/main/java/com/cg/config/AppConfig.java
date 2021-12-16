@@ -100,9 +100,12 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/ajax-maven-bank-transaction-location-jwt?characterEncoding=UTF-8");
-        dataSource.setUsername("root");
-        dataSource.setPassword("123");
+//        dataSource.setUrl("jdbc:mysql://localhost:3306/ajax-maven-bank-transaction-location-jwt?characterEncoding=UTF-8");
+//        dataSource.setUsername("root");
+//        dataSource.setPassword("123");
+        dataSource.setUrl("jdbc:mysql://ba1e0df5946bd8:24a9c426@eu-cdbr-west-02.cleardb.net/heroku_3831ac5037844fe?reconnect=true&characterEncoding=UTF-8");
+        dataSource.setUsername("ba1e0df5946bd8");
+        dataSource.setPassword("24a9c426");
         return dataSource;
     }
 
