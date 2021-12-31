@@ -103,6 +103,7 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
         dataSource.setUrl("jdbc:mysql://localhost:3306/ajax-maven-bank-transaction-location-jwt?characterEncoding=UTF-8");
         dataSource.setUsername("root");
         dataSource.setPassword("123");
+
         return dataSource;
     }
 
